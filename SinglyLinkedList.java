@@ -1,13 +1,7 @@
 package edu.cofc.csci230;
 
 
-/**
- * Singly LinkedList Data Structure
- * 
- * @author CSCI 230: Data Structures and Algorithms Fall 2017
- *
- * @param <AnyType>s
- */
+
 public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements List<AnyType> {
     
     // instance variables
@@ -224,22 +218,13 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
     /**
      * swap two elements in a list at index 
      * position i and j.
-     * 
-     * For example, 
-     *  if A = 1->2->3->4->5 and swap( 1, 3 ) is executed
-     *  then A = 1->4->3->2->5
-     *
      * @param i
      * @param j
      * @throws IndexOutOfBoundsException
      */
     public void swap( int i, int j )  throws IndexOutOfBoundsException {
         
-        /**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
+     
     	if(i < 0 || i >= size() || j < 0 || j > size() || j == i ){
     		throw new IndexOutOfBoundsException();
     	}else{
@@ -289,10 +274,7 @@ public class SinglyLinkedList<AnyType extends Comparable<AnyType>> implements Li
      * @param args
      */
     public static void main( String[] args ) {
-                
-        // -------------------------------------
-        // Put your test cases here
-        // -------------------------------------
+    
     	SinglyLinkedList<Integer> list = new SinglyLinkedList<Integer>();
     	
        
