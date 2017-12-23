@@ -1,12 +1,6 @@
 package edu.cofc.csci230;
 
-/**
- * ArrayList Data Structure
- * 
- * @author CSCI 230: Data Structures and Algorithms Fall 2017
- *
- * @param <AnyType>
- */
+
 public class ArrayList<AnyType extends Comparable<AnyType>> implements List<AnyType> {
     
     // instance variables
@@ -15,12 +9,7 @@ public class ArrayList<AnyType extends Comparable<AnyType>> implements List<AnyT
     private final static int INITIAL_CAPACITY = 10;
     private int capacity = INITIAL_CAPACITY;
     
-    /**
-     * Constructs an empty list with an initial capacity
-     * (for this assignment initial capacity is 10 - see 
-     * constant instance variable)
-     * 
-     */
+   
     public ArrayList() {
         
         array = (AnyType[]) new Comparable[ capacity ];
@@ -78,12 +67,7 @@ public class ArrayList<AnyType extends Comparable<AnyType>> implements List<AnyT
      */
     public void set(int index, AnyType t) throws IndexOutOfBoundsException {
         
-        /**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
-        
+     
         if ( index < 0 || index >= size )
             throw new IndexOutOfBoundsException();
         
@@ -216,23 +200,12 @@ public class ArrayList<AnyType extends Comparable<AnyType>> implements List<AnyT
     /**
      * swaps two elements in a list at index 
      * position i and j.
-     * 
-     * For example, 
-     *  if A = 1,2,3,4,5 and swap( 1, 3 ) is executed
-     *  then A = 1,4,3,2,5
-     *
      * @param i
      * @param j
      * @throws IndexOutOfBoundsException
      */
     public void swap( int i, int j )  throws IndexOutOfBoundsException {
-        
-        /**
-         * -------------------------------------------
-         * TODO: You fully implement this method
-         * 
-         */
-    	
+    
     	
     	if(i < 0 || i >= size() || j < 0 || j >= size() || i == j){
     		throw new IndexOutOfBoundsException();
@@ -290,11 +263,7 @@ public class ArrayList<AnyType extends Comparable<AnyType>> implements List<AnyT
      */
     public static void main( String[] args ) {
         
-        /**
-         * -------------------------------------------
-         * TODO: Put your test cases here
-         * 
-         */
+      
     	ArrayList<Integer> list = new ArrayList<Integer>();
     	
     	
